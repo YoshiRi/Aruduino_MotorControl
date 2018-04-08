@@ -107,7 +107,7 @@ void setup() {
   myPID.Reset();
   
   delay(1000);
-  nh.getHardware()->setBaud(115200); //set baudrate before init
+  nh.getHardware()->setBaud(57600); //set baudrate before init
   nh.initNode();
   nh.subscribe(sub_cmd_vel);
   nh.advertise(Current_Pos);
