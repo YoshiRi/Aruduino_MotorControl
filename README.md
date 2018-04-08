@@ -2,7 +2,8 @@
 
 ## Requirement & Setup
 
-- Hardware \
+- Hardware 
+
 PC with ROS and Aruduino IDE.
 
 The japanese document for installing Arduino IDE, check and follow this [page](http://ishi.main.jp/ros/ros_arduino.html).
