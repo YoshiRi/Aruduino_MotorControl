@@ -64,7 +64,8 @@ rosrun teleop_twist_keyboard teleop_twist_keyboard.py
 
 # memo
 
-## Connecting Issues
+## Arduino Connecting issue
+
 
 With 5ms roop and baudrate 57600 it communication frequency is almost 100Hz.
 
@@ -83,6 +84,16 @@ subscribed to [/current_vel]
 average rate: 209.468
         min: 0.001s max: 0.022s std dev: 0.00203s window: 201
 ```
+
+### Problem
+
+rosserial python stops with errors.
+
+```
+[WARN] [1523175088.478695]: Serial Port read failure: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+```
+
+
 
 ## Share the data with multiple ROS hardware
 
