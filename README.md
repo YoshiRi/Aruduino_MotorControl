@@ -33,7 +33,7 @@ by Paul Stoffregen
 
 Include following [package](https://github.com/Tellicious/ArduPID-Library/blob/master/ArduPID/examples/Standard_PID/Standard_PID.ino).
 
-- 
+ 
 
 
 ## How to run 
@@ -62,9 +62,9 @@ rosrun teleop_twist_keyboard teleop_twist_keyboard.py
 ```
 
 
-## memo
+# memo
 
-### Connecting Issues
+## Connecting Issues
 
 With 5ms roop and baudrate 57600 it communication frequency is almost 100Hz.
 
@@ -84,4 +84,30 @@ average rate: 209.468
         min: 0.001s max: 0.022s std dev: 0.00203s window: 201
 ```
 
-## 
+## Share the data with multiple ROS hardware
+
+First, open hosts file to recognize the host and client ROS computer each other.
+
+```
+sudo gedit /etc/hosts
+```
+
+```
+<host ip address> host
+<client ip address> client
+```
+
+
+Then, for the host computer,
+
+```
+export ROS_MASTER_URI=http://host:11311
+export ROS_HOSTNAME=host
+```
+
+after that for the client computer,
+
+```
+export ROS_MASTER_URI=http://host:11311
+export ROS_HOSTNAME=client
+```
